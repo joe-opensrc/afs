@@ -53,6 +53,7 @@ do
   l) len=${OPTARG};;
   m) min=${OPTARG};;
   o) only=${OPTARG};;
+  \:) echo -n "${usage}";;
  esac
  shift $(( OPTIND - 1 ))
  OPTIND=
